@@ -1,0 +1,252 @@
+
+.main
+    font-family: 'Roboto'
+    padding: 15px 0 0
+    min-height: 836px
+    background: url(../img/main-bg.jpg) center center/cover no-repeat
+    &__logo
+        span
+            font-weight: 900
+            margin: 0 90px 0 20px
+            font-size: 22px
+    &__bullets
+        display: flex
+        justify-content: space-between
+        list-style: none
+        padding: 0
+        margin: 0 0 40px
+        li
+            display: flex
+            align-items: center
+    .container
+        max-width: 1170px
+        .col-md-5, .col-md-7
+            position: relative
+        .col-md-5
+            display: flex
+            justify-content: flex-end
+            .legs
+                position: absolute
+                top: -15px
+                left: -45%
+                z-index: 1
+            .tablets
+                position: absolute
+                left: -20%
+                bottom: -190px
+                z-index: 2
+            .price-orange, .prise-green
+                position: absolute
+                z-index: 5
+                padding: 10px
+                border-radius: 5px
+                font-size: 34px
+                line-height: 24px
+                font-weight: 900
+                color: #ffffff
+                span
+                    font-weight: 500
+            .price-orange
+                background-color: $orange
+                bottom: 175px
+                right: 150px
+            .prise-green
+                background-color: $green
+                bottom: 45px
+                right: 50px
+
+        .title
+            font-size: 44px
+            color: rgb(56, 51, 52)
+            line-height: 1
+            font-weight: 900
+            span
+                position: relative
+                font-size: 34px
+                z-index: 10
+                &:first-of-type
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 120px
+                        border-bottom: 5px solid $orange
+                        z-index: -1
+                &:last-of-type
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        right: 20px
+                        width: 120px
+                        border-bottom: 5px solid $green
+                        z-index: -1
+
+        .descr
+            margin: 57px 0 0
+            padding: 0
+            .row
+                margin: 0 0 40px
+                width: 100%
+                .col-md-2
+                    padding: 0
+                .col-md-10
+                    padding-right: 0
+            &__num
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: row
+                width: 60px
+                height: 60px
+                background-color: $green
+                border-radius: 100%
+                border: 7px solid $lime
+                color: #ffffff
+                font-weight: 900
+            &__text
+                font-size: 20px
+                line-height: 24px
+                font-weight: 400
+                span
+                    font-weight: 500
+                #tablets, #gel
+                    position: relative
+                    z-index: 10
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: -2px
+                        left: 0
+                        width: 85px
+                        border-bottom: 3px solid $orange
+                        z-index: -1
+                #gel
+                    &::after
+                        width: 40px
+                        border-color: $green
+
+        .form
+            position: relative
+            height: 550px
+            width: 100%
+            border: 7px solid $green
+            border-radius: 15px
+            background-color: #fff
+            &__arrow
+                position: absolute
+                right: -35px
+                top: 53%
+                transform: translateY(-50%)
+            &__wrapper
+                padding: 50px 18px 0
+            .delivery
+                position: absolute
+                top: -7px
+                left: 50%
+                transform: translateX(-50%)
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 150px
+                border: 7px solid $green
+                border-radius: 0 0 15px 15px
+                border-top: none
+                padding: 0 0 10px
+                background-color: $gray
+                img
+                    margin: 0 9px 0 0
+            &__title
+                text-align: center
+                font-weight: 400
+                margin: 0 0 5px
+                span
+                    color: $orange
+                    font-size: 20px
+                    line-height: 1.1
+                    text-align: center
+                    font-weight: 500
+            .price
+                display: flex
+                text-align: center
+                justify-content: space-between
+                font-weight: 400
+                font-size: 14px
+                line-height: 24px
+                &__old
+                    position: relative
+                    color: #666666
+                    span
+                        display: block
+                        font-size: 34px
+                        font-weight: 300
+                        padding: 10px 5px
+                        &::before, &::after
+                            content: ''
+                            position: absolute
+                            top: 63%
+                            left: 50%
+                            transform: translate(-50%) rotate(10deg)
+                            width: 80px
+                            border-bottom: 1px solid $orange
+                        &::after
+                            transform: translate(-50%) rotate(-10deg)
+                &__new
+                    color: #000
+                    span
+                        display: block
+                        background-color: $yellow
+                        border-radius: 5px
+                        font-size: 34px
+                        font-weight: 900
+                        padding: 10px 5px
+            form
+                margin: 16px 0 0
+                input
+                    width: 100%
+                    padding: 20px 0 20px 60px
+                    background-color: $gray
+                    border: none
+                    border-radius: 50px
+                    margin: 0 0 5px
+                    &:last-of-type
+                        margin: 0 0 15px
+                    &:focus
+                        outline: none
+                        border: 1px solid $orange
+                        border-radius: 50px
+                #name, #phone
+                    background-repeat: no-repeat
+                    background-position: 25px 50%
+                #name
+                    background-image: url(../icons/name.png)
+                #phone
+                    background-image: url(../icons/phone.png)
+                button
+                    width: 100%
+                    border: none
+                    border-radius: 35px
+                    padding: 22px 0 18px
+                    font-size: 16px
+                    line-height: 16px
+                    font-weight: 900
+                    background-color: $yellow
+                    span
+                        font-size: 28px
+
+            .left
+                margin: 10px 0 10px
+                text-align: center
+                line-height: 18px
+                span
+                    color: $green
+            .data
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: 45px
+                background-color: $gray
+                border-bottom-left-radius: 8px
+                border-bottom-right-radius: 8px

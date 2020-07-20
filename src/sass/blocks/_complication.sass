@@ -1,0 +1,105 @@
+.complication
+    font-family: 'Roboto'
+    padding: 0 0 30px
+    .container
+        max-width: 1170px
+    &__logo
+        display: block
+        margin: 40px auto 0
+    &__title
+        text-align: center
+        font-weight: 900
+        font-size: 48px
+        line-height: 48px
+    &__subtitle
+        margin: 52px 0 0
+        text-align: center
+        font-weight: 900
+        font-size: 24px
+    .box
+        margin: 55px 0 0
+        &__wrapper
+            position: relative
+            display: flex
+            align-items: center
+            .arc
+                position: absolute
+                top: -28px
+                left: -27px
+                height: 130px
+                width: 170px
+                overflow: hidden
+                border: none
+                .svg
+                    stroke-width: 10px
+                    stroke: #ec9a6a
+                    &_middle
+                        stroke: #e47643
+                    &_right
+                        stroke: #ec5b19
+            img
+                width: 50%
+                margin: 0 20px 0 0
+            .num
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                top: -10px
+                right: 51%
+                width: 50px
+                height: 50px
+                background-color: #ec9a6a
+                border-radius: 100px
+                font-size: 30px
+                line-height: 28px
+                color: #fff
+                font-weight: 400
+            #num2
+                background-color: #e47643
+            #num3
+                background-color: #ec5b19
+        &__title
+            font-size: 22px
+            line-height: 26px
+            font-weight: 500
+        &__descr
+            font-size: 18px
+            line-height: 28px
+            font-weight: 400
+            margin: 25px 0 0
+            &::before
+                content: ''
+                display: block
+                width: 50px
+                border-top: 3px solid #becbd8
+                margin: 0 0 25px
+
+    .static
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        height: 131px
+        border: 3px solid #f4d3bb
+        border-radius: 10px
+        text-align: center
+        margin: 78px 0 0
+        img
+            position: absolute
+            top: -25px
+            left: 50%
+            transform: translate(-50%)
+            background-color: #fff
+            padding: 0 40px 0
+            &::before
+                content: ''
+                display: block
+                border: 9px solid #ec9a6a
+                width: 150px
+        &__text
+            font-weight: 400
+            font-size: 22px
+            line-height: 28px
+            span
+                font-weight: 500
