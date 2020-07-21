@@ -1,2 +1,200 @@
-// @media (max-width: 1400px)
-// 
+@media ( max-width: 1300px )
+    .main
+        .container
+            .legs 
+                width: 145%
+            .tablets 
+                left: -7%
+                width: 130%
+            .prise-green, .price-orange 
+                font-size: 25px
+            .price-orange 
+                right: 130px
+            .prise-green
+                right: 25px
+    .complication
+        &__logo
+            margin: 0 auto 
+        &__subtitle
+            margin: 25px 0 0
+
+@media ( max-width: 1200px )
+    .main
+        .container 
+            .legs
+                left: -35%
+                width: 140%
+            .tablets 
+                left: -4%
+                width: 115%
+                top: 50%
+            .price-orange 
+                top: 47%
+            .prise-green 
+                top: 59%
+                right: 50px
+            .title 
+                font-size: 40px
+                span 
+                    font-size: 30px
+            .descr
+                .row 
+                    margin: 0px 0 20px
+                &__text
+                    font-size: 18px
+            .form
+                .price
+                    &__old, &__new
+                        span 
+                            font-size: 30px
+        &__logo
+            span 
+                margin: 0 0px 0 10px
+
+    .complication
+        &__logo
+            margin: -125px auto 0
+        .box
+            &__wrapper
+                .num
+                    top: -15px
+                    right: 47%
+    
+@media ( max-width: 991px )
+    .main
+        .container
+            .legs 
+                left: -35%
+                width: 170%
+            .tablets
+                left: 0%
+                width: 150%
+                top: 40%
+            .price-orange, .prise-green
+                font-size: 20px
+                padding: 5px
+            .price-orange
+                top: 38%
+                right: 35px
+            .prise-green 
+                top: 47%
+                right: -30px
+            .title
+                margin: 0 auto
+                width: 70%
+                font-size: 32px
+                span 
+                    font-size: 28px
+                span:first-of-type::after, span:last-of-type::after
+                    width: 95px
+            .descr
+                margin: 30px auto 15px
+                width: 70%
+            .form
+                margin: 0 auto
+                width: 60%
+                height: 525px
+        &__logo
+            img
+                display: none
+        &__bullets
+            li
+                font-size: 12px
+    .complication
+        .static
+            padding: 25px
+        &__logo
+            margin: -65px 25% 50px
+        &__subtitle
+            font-size: 20px
+        .box
+            &__descr 
+                font-size: 16px
+            &__title
+                font-size: 20px
+            &__wrapper
+                .arc
+                    display: none
+
+@media ( max-width: 767px )
+    .main
+        .container
+            .legs 
+                left: 0
+                width: 100%
+            .tablets
+                left: 0
+                width: 100%
+                top: 60%
+            .price-orange, .prise-green
+                font-size: 30px
+                padding: 10px
+            .price-orange
+                top: 58%
+                right: 42%
+            .prise-green
+                top: 73%
+                right: 25%
+            .title
+                text-align: center
+                font-size: 40px
+                width: 100%
+            .descr 
+                width: 100%
+        &__logo
+            img
+                display: block
+        &__bullets
+            justify-content: space-around
+            margin: 70px 0 40px
+
+@media ( max-width: 575px )
+    .main
+        &__bullets
+            margin: 50px 0 40px
+        &__left
+            min-height: 560px
+
+@media ( max-width: 450px )
+    .main
+        &__logo
+            img
+                width: 15%
+            span
+                margin: 0 0 0 5px
+        &__left
+            min-height: 420px
+        &__bullets
+            flex-wrap: wrap
+            margin: 50px 0 10px
+            li
+                margin: 0 0 15px
+        .container
+            .legs
+                width: 90%
+            .price-orange, .prise-green
+                font-size: 20px
+                padding: 5px
+            .form
+                width: 85%
+
+@media ( max-width: 365px )
+    .main
+        &__left
+            min-height: 350px
+        .container
+            .legs
+                width: 90%
+
+@media ( max-width: 325px )
+    .main
+        .container
+            .title 
+                font-size: 30px
+                span
+                    font-size: 20px
+                span:first-of-type::after, span:last-of-type::after 
+                    width: 63px
+            .form
+                height: 550px
+    
